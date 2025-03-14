@@ -1,0 +1,13 @@
+[metadata]
+name = hiddenbayes
+version = 0.1.0
+description = Hidden Naïve Bayes implementation for scikit-learn
+long_description = file: README.md
+long_description_content_type = text/markdown
+author = Angel Cervera Ronda
+author_email = angelcerveraronda@gmail.com
+license = BSD-3-Clause
+classifiers =
+    Programming Language :: Python :: 3
+    License :: OSI Approved :: BSD License
+    Operating System :: OS Independent
