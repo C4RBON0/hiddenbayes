@@ -13,3 +13,8 @@ Thumbs.db
 # Archivos de configuración del IDE
 .vscode/
 .idea/
+
+# Exclude old setup files
+setup.py.old
+setup.cfg.old
+

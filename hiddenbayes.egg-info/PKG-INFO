@@ -15,24 +15,20 @@ License-File: LICENSE
 # hiddenbayes
 hiddenbayes is a Python library implementing the Hidden Naive Bayes (HNB) model, designed to extend scikit-learn. It provides a simple and efficient way to classify data using a probabilistic approach while incorporating hidden states for better representation of dependencies between features.
 
-> [!NOTE]
-> Installation
 
-You can install hiddenbayes via pip
-> [!TIP]
-> pip install hiddenbayes
+# Installation
 
-Yet, you can install it directly from the source
-> [!TIP]
-> git clone https://github.com/C4RBON0/hiddenbayes.git
-> cd hiddenbayes
-> pip install .
+You can install hiddenbayes via pip:
+pip install hiddenbayes
 
-> [!IMPORTANT]
-> Make sure you have 'numpy' and 'scikit-learn' installed before using hiddenbayes
+Yet, you can install it directly from the source:
+git clone https://github.com/C4RBON0/hiddenbayes.git
+cd hiddenbayes
+pip install .
 
-> [!NOTE]
-> Usage example
+Make sure you have 'numpy' and 'scikit-learn' installed before using hiddenbayes
+
+# Usage example
 
 Below is a example demonstrating how to use HiddenNaiveBayes
 
@@ -55,40 +51,33 @@ predictions = model.predict(X_test)
 print("Predictions:", predictions)
 ```
 
-> [!NOTE]
-> Development Setup
+# Development Setup
 
-> [!TIP]
-> git clone https://github.com/C4RBON0/hiddenbayes.git
-> cd hiddenbayes
-> python -m venv venv
-> source venv/bin/activate  # On Windows use: venv\Scripts\activate
-> pip install -r requirements.txt
+git clone https://github.com/C4RBON0/hiddenbayes.git
+cd hiddenbayes
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+pip install -r requirements.txt
 
 Run tests to ensure everything is working correctly
 
-> [!TIP]
-> python -m unittest discover tests
+python -m unittest discover tests
 
-> [!NOTE]
-> Contributing
+# Contributing
 
 Contributions are welcome, to contribute:
 
-> [!TIP]
-> 1. Fork the repository
-> 2. Create a feature branch (git checkout -b feature-branch)
-> 3. Commit your changes (git commit -m "Add new feature")
-> 4. Push to the branch (git push origin feature-branch)
-> 5. Open a pull request.
+1- Fork the repository
+2- Create a feature branch (git checkout -b feature-branch)
+3- Commit your changes (git commit -m "Add new feature")
+4- Push to the branch (git push origin feature-branch)
+5- Open a pull request.
 
-> [!NOTE]
-> License
+# License
 
-This project is licensed under the MIT License
+This project is licensed under the BSD-3 License
 
-> [!IMPORTANT]
-> If you use this library in research or production, please consider citing or acknowledging it in your work. Your support helps improve the project.
+If you use this library in research or production, please consider citing or acknowledging it in your work. Your support helps improve the project.
 
 ```bibtex
 @misc{HiddenBayes,
