@@ -18,3 +18,5 @@ Thumbs.db
 setup.py.old
 setup.cfg.old
 
+*.egg-info
+
