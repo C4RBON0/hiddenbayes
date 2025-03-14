@@ -1,0 +1,15 @@
+# Ignorar entorno virtual
+venv/
+
+# Archivos de compilación de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos del sistema operativo (Windows)
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración del IDE
+.vscode/
+.idea/

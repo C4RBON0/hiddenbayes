@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hiddenbayes/__init__.py
+hiddenbayes/hnb.py
+hiddenbayes.egg-info/PKG-INFO
+hiddenbayes.egg-info/SOURCES.txt
+hiddenbayes.egg-info/dependency_links.txt
+hiddenbayes.egg-info/top_level.txt
+tests/tests_hnb.py

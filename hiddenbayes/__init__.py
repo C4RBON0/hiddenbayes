@@ -1,1 +1,1 @@
-from .hnb import hiddenbayes
+from .hnb import HiddenNaiveBayes

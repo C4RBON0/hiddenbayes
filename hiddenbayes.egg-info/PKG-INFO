@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: hiddenbayes
+Version: 0.1.0
+Summary: A Hidden Naive Bayes library, it will give support to scikit-learn
+Home-page: https://github.com/C4RBON0/hiddenbayes
+Author: Angel Cervera Ronda
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# hiddenbayes
+A Hidden Naive Bayes Classifier python library with the content explained and enhanced to achieve great comprehension.
