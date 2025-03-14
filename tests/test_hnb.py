@@ -1,20 +1,26 @@
-# tests/test_hnb.py
+import unittest
 import numpy as np
-from hiddenbayes.hnb import HiddenNaiveBayes
+from hiddenbayes import HiddenNaiveBayes
 
-def test_hnb_initialization():
-    model = HiddenNaiveBayes(num_hidden_states=3)
-    assert model.num_hidden_states == 3
+class TestHiddenNaiveBayes(unittest.TestCase):
+    def setUp(self):
+        self.model = HiddenNaiveBayes(num_hidden_states=2)
 
-def test_hnb_fit():
-    model = HiddenNaiveBayes()
-    X = np.array([[1, 2], [3, 4], [5, 6]])
-    model.fit(X)  # Debería ejecutarse sin errores
-    assert model.n_samples_ == len(X)
+    def test_fit(self):
+        X = np.array([[1, 0, 1], [0, 1, 0], [1, 1, 1]])
+        y = np.array([0, 1, 0])
+        self.model.fit(X, y)
+        self.assertIsNotNone(self.model.class_probs_)
+        self.assertIsNotNone(self.model.cond_probs_)
 
-def test_hnb_predict():
-    model = HiddenNaiveBayes()
-    X = np.array([[1, 2], [3, 4], [5, 6]])
-    y_pred = model.predict(X)
-    assert len(y_pred) == len(X)
-    assert all(y == 0 for y in y_pred)  # Debería predecir solo ceros
+    def test_predict(self):
+        X_train = np.array([[1, 0, 1], [0, 1, 0], [1, 1, 1]])
+        y_train = np.array([0, 1, 0])
+        self.model.fit(X_train, y_train)
+
+        X_test = np.array([[1, 0, 0], [0, 1, 1]])
+        predictions = self.model.predict(X_test)
+        self.assertEqual(len(predictions), len(X_test))
+
+if __name__ == "__main__":
+    unittest.main()
