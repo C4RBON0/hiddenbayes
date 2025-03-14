@@ -74,5 +74,14 @@ Contributions are welcome, to contribute:
 This project is licensed under the MIT License
 
 > [!IMPORTANT]
-> If you use this library in research or production, consider citing or acknowledging it in your work.
+> If you use this library in research or production, please consider citing or acknowledging it in your work. Your support helps improve the project.
+
+```bibtex
+@misc{HiddenBayes,
+  author = {Angel Cervera Ronda},
+  title = {HiddenBayes: Hidden Naive Bayes classifier for Python},
+  year = {2025},
+  howpublished = {\url{https://github.com/C4RBON0/hiddenbayes}}
+}
+```
 
